@@ -82,11 +82,11 @@ background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+
     margin: 100% 0;
     text-decoration: none;
     color: #fff;
-    transition: all .8s ease-in-out;
+    transition: all .7s ease-in-out;
 }
 
 #sidebar a:hover {
-    transform: translateX(-5px);
+    transform: translateX(-10px);
 }
 
 #portfolioPreview {

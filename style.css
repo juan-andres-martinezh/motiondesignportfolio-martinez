@@ -162,8 +162,7 @@ background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+
 #aboutMe #aboutMeText {
     display: flex;
     flex-direction: column;
-    width: 50%;
-    padding-left: 8%;
+    width: 100%;
 }
 
 #aboutMe #aboutMeText h2 {
@@ -175,6 +174,17 @@ background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+
     width: 80%;
     letter-spacing: 1.5px;
     line-height: 1.8em;
+}
+
+.aboutMePhoto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutMePhoto img {
+    width: 50%;
+    border-radius: 50%;
 }
 
 footer {
@@ -219,8 +229,8 @@ footer p {
 .packageItem {
     border: 1px solid white;
     padding: 20px 50px 50px 50px;
-    height: 50vh;
-    width: 200px;
+    height: 80vh;
+    width: 100%;
     display: flex;
     flex-direction: column;
     position: relative;
@@ -252,7 +262,7 @@ footer p {
     width: 100%;
 }
 
-/* MEDIA QUERIES */
+/*MEDIA QUERIES*/ 
 @media screen and (max-width: 480px) {
     #navigation ul {
         flex-direction: column;
@@ -311,7 +321,7 @@ footer p {
         width: 100%;
     }
 
-    /* CONTACT PAGE */
+     /*CONTACT PAGE*/ 
 
     #navigation {
         position: static;

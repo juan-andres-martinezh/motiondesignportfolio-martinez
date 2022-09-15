@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <title>Juan Andrés M. - Motion Designer</title>
 </head>
 <body>
+    <div class="wrapper">
     <section id="navigation">
         <nav>
             <ul>
@@ -31,7 +33,7 @@
             <img src="./imgs/me.jpg" alt="">
         </div>
         <div class="topText">
-            <h1>Juan Andrés Martínez</h1>
+            <h1 class>Juan Andrés Martínez</h1>
             <p>Hi there! I am a Motion Designer and Front-End Web Developer living in Buenos Aires, Argentina.</p>
         </div>
     </section>
@@ -57,16 +59,27 @@
         <button class="btn">Let's work together!</button>
     </section>
 
-    <section id="aboutMe">
-        <div id="aboutMeText">
-            <h2>My story</h2>
-            <p>I grew up surrounded by videogames, movies and cartoons. Eventually I would find myself drawing non-stop, inspired by everything surrounding me. Growing up I started to take an interest in others forms of art like filmmaking, music, photography, 3D. But everything always led me to animation, it's a combination of all the things I love and it can be applied to all of the fields I love. After a few years of trying and failing miserably, eventually I made it and now here I am.</p>
+    <div class="container">
+        <div class="row">
+            <section id="aboutMe" class="col-6">
+                <div id="aboutMeText">
+                    <h2>My story</h2>
+                    <p>I grew up surrounded by videogames, movies and cartoons. Eventually I would find myself drawing non-stop, inspired by everything surrounding me. Growing up I started to take an interest in others forms of art like filmmaking, music, photography, 3D. But everything always led me to animation, it's a combination of all the things I love and it can be applied to all of the fields I love. After a few years of trying and failing miserably, eventually I made it and now here I am.</p>
+                </div>
+            </section>
+
+            <div class="aboutMePhoto col-6">
+                <img src="./imgs/collage.jpg" alt="Collage of classic video game posters">
+            </div>
         </div>
-    </section>
+    </div>
+    
+    </div>
 
     <footer>
         <p>Juan Andrés Martínez 2022 - All Rights Reserved.</p>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -1,0 +1,26 @@
+#navigation {
+  position: absolute;
+  width: 100%;
+}
+#navigation nav ul {
+  display: flex;
+  justify-content: start;
+  list-style: none;
+}
+#navigation nav ul li {
+  padding: 20px 40px;
+  transition: all 0.5s ease-in-out;
+}
+#navigation nav ul li:hover {
+  transform: translateY(6px);
+}
+#navigation nav ul li a {
+  text-decoration: none;
+  color: #E7F6F2;
+}
+
+.btn {
+  background-color: #000;
+}
+
+/*# sourceMappingURL=style.css.map */

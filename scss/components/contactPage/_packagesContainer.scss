@@ -1,9 +1,10 @@
+body {
+    overflow-x: hidden;
+}
+
 #packagesContainer {
-    display: flex;
-    flex-direction: column;
+    @extend %centerFlexColumn;
     height: 100vh;
-    justify-content: center;
-    align-items: center;
 
     .packagesTitle {
         h1 {
@@ -43,11 +44,11 @@
 
             .btnContainer {
                 .buyBtn {
-                    padding: 15px;
-                    background-color: #fff;
-                    color: #000;
-                    border: none;
+                    @include standardBtn(20px 40px, #fff);
                     width: 100%;
+                    &:hover {
+                        background-color: #3a86ff;
+                    }
                 }
             }
         }

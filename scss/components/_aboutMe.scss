@@ -1,33 +1,36 @@
-#aboutMe {
-    margin-top: 100px;
-    height: 50%;
-    scroll-behavior: smooth;
+.container {
+    margin-top: 200px;
+    #aboutMe {
+        height: 100%;
+        scroll-behavior: smooth;
 
-    #aboutMeText {
+        #aboutMeText {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+
+            h2 {
+                margin-bottom: 20px;
+                font-size: 2em;
+            }
+
+            p {
+                width: 80%;
+                letter-spacing: 1.5px;
+                line-height: 1.8em;
+            }
+        }
+    }
+
+    .aboutMePhoto {
         display: flex;
-        flex-direction: column;
-        width: 100%;
-
-        h2 {
-            margin-bottom: 20px;
-            font-size: 2em;
-        }
-
-        p {
-            width: 80%;
-            letter-spacing: 1.5px;
-            line-height: 1.8em;
+        justify-content: center;
+        align-items: center;
+        
+        img {
+            width: 50%;
+            border-radius: 50%;
         }
     }
 }
 
-.aboutMePhoto {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-    img {
-        width: 50%;
-        border-radius: 50%;
-    }
-}

@@ -1,0 +1,7 @@
+@mixin standardBtn($padding, $bgColor) {
+    padding: $padding;
+    background-color: $bgColor;
+    border-radius: 5px;
+    border: none;
+    transition: all .3s ease-in-out;
+}

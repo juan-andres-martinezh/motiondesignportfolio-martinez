@@ -1,3 +1,10 @@
+#packagesContainer, #sidebar, #top .topText, #top {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 body {
   font-family: Arial, Helvetica, sans-serif;
   background: #0F2027; /* fallback for old browsers */
@@ -7,21 +14,12 @@ body {
 }
 
 #top {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   padding: 10px 0 0 20px;
   height: 100vh;
 }
 #top .topAvatar img {
   border-radius: 50%;
   width: 150px;
-}
-#top .topText {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 #top .topText h1 {
   font-size: 4em;
@@ -63,10 +61,6 @@ body {
 }
 
 #sidebar {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   position: fixed;
   right: 0;
   height: 100vh;
@@ -100,10 +94,16 @@ body {
   width: 40%;
   display: inline;
 }
-#portfolioPreview .seeMoreContainer .btn {
+#portfolioPreview .seeMoreContainer .seeMoreBtn {
+  padding: 20px 40px;
+  background-color: #000;
+  border-radius: 5px;
+  border: none;
   transition: all 0.3s ease-in-out;
+  color: #fff;
+  margin-top: 20px;
 }
-#portfolioPreview .seeMoreContainer .btn:hover {
+#portfolioPreview .seeMoreContainer .seeMoreBtn:hover {
   background: #fff;
   color: #000;
 }
@@ -124,44 +124,51 @@ body {
   margin: 0 auto;
   width: 100%;
 }
-#showreel button {
+#showreel .seeMoreBtn {
+  padding: 20px 40px;
+  background-color: #000;
+  border-radius: 5px;
+  border: none;
   transition: all 0.3s ease-in-out;
+  color: #fff;
+  margin-top: 20px;
 }
-#showreel button:hover {
+#showreel .seeMoreBtn:hover {
   background: #fff;
   color: #000;
 }
-#showreel button a {
+#showreel .seeMoreBtn a {
   text-decoration: none;
   color: #fff;
 }
 
-#aboutMe {
-  margin-top: 100px;
-  height: 50%;
+.container {
+  margin-top: 200px;
+}
+.container #aboutMe {
+  height: 100%;
   scroll-behavior: smooth;
 }
-#aboutMe #aboutMeText {
+.container #aboutMe #aboutMeText {
   display: flex;
   flex-direction: column;
   width: 100%;
 }
-#aboutMe #aboutMeText h2 {
+.container #aboutMe #aboutMeText h2 {
   margin-bottom: 20px;
   font-size: 2em;
 }
-#aboutMe #aboutMeText p {
+.container #aboutMe #aboutMeText p {
   width: 80%;
   letter-spacing: 1.5px;
   line-height: 1.8em;
 }
-
-.aboutMePhoto {
+.container .aboutMePhoto {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.aboutMePhoto img {
+.container .aboutMePhoto img {
   width: 50%;
   border-radius: 50%;
 }
@@ -237,12 +244,12 @@ footer p {
     height: 50vh;
   }
 }
+body {
+  overflow-x: hidden;
+}
+
 #packagesContainer {
-  display: flex;
-  flex-direction: column;
   height: 100vh;
-  justify-content: center;
-  align-items: center;
 }
 #packagesContainer .packagesTitle h1 {
   margin-bottom: 20px;
@@ -274,11 +281,15 @@ footer p {
   margin: 10px 0;
 }
 #packagesContainer .packages .packageItem .btnContainer .buyBtn {
-  padding: 15px;
+  padding: 20px 40px;
   background-color: #fff;
-  color: #000;
+  border-radius: 5px;
   border: none;
+  transition: all 0.3s ease-in-out;
   width: 100%;
+}
+#packagesContainer .packages .packageItem .btnContainer .buyBtn:hover {
+  background-color: #3a86ff;
 }
 
 /*# sourceMappingURL=style.css.map */

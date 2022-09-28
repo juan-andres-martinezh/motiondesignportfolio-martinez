@@ -23,8 +23,10 @@
 
     .seeMoreContainer {
 
-        .btn {
-            transition: all .3s ease-in-out;
+        .seeMoreBtn {
+            @include standardBtn(20px 40px, #000);
+            color: #fff;
+            margin-top: 20px;
             &:hover {
                 background: #fff;
                 color: #000;

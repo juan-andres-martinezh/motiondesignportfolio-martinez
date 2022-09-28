@@ -1,8 +1,5 @@
 #top {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @extend %centerFlexColumn;
     padding: 10px 0 0 20px;
     height: 100vh;
 
@@ -14,9 +11,7 @@
     }
 
     .topText {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        @extend %centerFlexColumn;
         h1 {
             font-size: 4em;
         }

@@ -1,0 +1,55 @@
+#packagesContainer {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+
+    .packagesTitle {
+        h1 {
+            margin-bottom: 20px;
+        }
+    }
+
+    .packages {
+        display: flex;
+
+        .packageItem {
+            border: 1px solid white;
+            padding: 20px 50px 50px 50px;
+            height: 80vh;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+
+            h2 {
+                text-align: center;
+                padding: 20px 0;
+                font-size: 3em;
+            }
+
+            hr {
+                margin-bottom: 20px;
+            }
+
+            ul {
+                min-height: 50%;
+
+                li {
+                    margin: 10px 0;
+                }
+            }
+
+            .btnContainer {
+                .buyBtn {
+                    padding: 15px;
+                    background-color: #fff;
+                    color: #000;
+                    border: none;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

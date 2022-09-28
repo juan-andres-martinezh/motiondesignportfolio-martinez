@@ -1,0 +1,30 @@
+#top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0 0 20px;
+    height: 100vh;
+
+    .topAvatar {
+        img {
+            border-radius: 50%;
+            width: 150px;
+        }
+    }
+
+    .topText {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h1 {
+            font-size: 4em;
+        }
+
+        p {
+            width: 60%;
+            text-align: center;
+            font-size: 1.2em;
+        }
+    }
+}

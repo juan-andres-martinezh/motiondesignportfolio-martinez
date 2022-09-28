@@ -1,0 +1,20 @@
+#sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    right: 0;
+    height: 100vh;
+    
+    a {
+        transform: rotate(90deg);
+        margin: 100% 0;
+        text-decoration: none;
+        color: #fff;
+        transition: all .7s ease-in-out;
+        &:hover {
+            transform: translateX(-10px);
+        }
+    }
+}

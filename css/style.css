@@ -175,8 +175,9 @@ body {
 
 footer {
   background-color: #000;
+  color: #fff;
+  padding: 20px 40px;
   margin-top: 200px;
-  padding: 20px 0;
 }
 footer p {
   text-align: center;

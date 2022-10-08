@@ -1,4 +1,33 @@
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 810px) {
+    #top .topText h1 {
+        font-size: 3em;
+    }
+
+    #showreel h2 {
+        font-size: 2em;
+        width: 100%;
+        text-align: center;
+    }
+
+    .container {
+        justify-content: center;
+        align-items: center;
+    }
+
+    #aboutMe {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .aboutMePhoto img {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 680px) {
     #navigation ul {
         flex-direction: column;
         align-items: center;
@@ -9,6 +38,12 @@
         padding: 12px 20px;
     }
     
+    #top .topText h1 {
+        font-size: 2em;
+    }
+}
+
+@media screen and (max-width: 480px) {
     #top {
         justify-content: center;
         align-items: center;

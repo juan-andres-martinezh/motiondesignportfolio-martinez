@@ -190,8 +190,40 @@ footer {
   padding: 20px 40px;
   margin-top: 200px;
 }
-footer p {
-  text-align: center;
+footer .footer-navigation {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 50px;
+}
+footer .footer-navigation a {
+  text-decoration: none;
+  color: #fff;
+}
+footer .footer-navigation a:hover {
+  text-decoration: underline;
+}
+footer .footer-bottom {
+  display: flex;
+  justify-content: space-around;
+}
+footer .footer-bottom .socials {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+footer .footer-bottom .socials .social-media {
+  display: flex;
+}
+footer .footer-bottom .socials .social-media .fa-brands {
+  margin-right: 20px;
+}
+footer .footer-bottom .socials .address {
+  margin-top: 20px;
+}
+footer .footer-bottom .newsletter-form .form {
+  width: 500px;
+  height: 200px;
+  background-color: red;
 }
 
 body {
@@ -239,7 +271,7 @@ body {
   width: 100%;
 }
 #packagesContainer .packages .packageItem .btnContainer .buyBtn:hover {
-  background-color: #3a86ff;
+  background-color: #AFE1AF;
 }
 
 @media screen and (max-width: 810px) {

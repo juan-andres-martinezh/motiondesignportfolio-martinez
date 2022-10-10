@@ -4,7 +4,50 @@ footer {
     padding: map-get($footer, padding-all);
     margin-top: 200px;
 
-    p {
-        text-align: center;
+    .footer-navigation {
+        display: flex;
+        justify-content: space-evenly;
+        margin-bottom: 50px;
+
+        a {
+            text-decoration: none;
+            color: #fff;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .footer-bottom {
+        display: flex;
+        justify-content: space-around;
+
+        .socials {
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+
+            .social-media {
+                display: flex;
+
+                .fa-brands {
+                   margin-right: 20px;
+                }
+            }
+
+            .address {
+                margin-top: 20px;
+            }
+        }
+
+        .newsletter-form {
+            
+
+            .form {
+                width: 500px;
+                height: 200px;
+                background-color: red;
+            }
+        }
     }
 }
